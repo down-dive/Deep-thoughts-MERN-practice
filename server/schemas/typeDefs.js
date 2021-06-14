@@ -4,7 +4,7 @@ const { gql } = require('apollo-server-express');
 // create our typeDefs
 const typeDefs = gql`
 type Query {
-thoughts: [ Thought]
+thoughts: [Thought]
 }
 `;
 
