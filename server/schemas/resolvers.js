@@ -1,7 +1,7 @@
 const resolvers = {
     Query: {
-        helloWorld: () => {
-            return 'Hello World!';
+        thoughts: async () => {
+            return Thought.find().sort({ createdAt: -1 });
         }
     }
 };
