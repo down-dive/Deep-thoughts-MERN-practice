@@ -11,7 +11,8 @@ const app = express();
 // create a new Apollo server and pass in our schema data
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
+  context: ({ req }) => req.headers
 });
 
 // integrate our Apollo server with the Express application as middleware
