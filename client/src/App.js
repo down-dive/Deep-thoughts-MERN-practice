@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 const httpLink = createHttpLink({
-  uri: 'http:localhost:3001/grahql',
+  uri: '/grahql',
 });
 
 const client = new ApolloClient({
